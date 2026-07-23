@@ -1,0 +1,15 @@
+project_root: .
+nafnet_root: third_party/NAFNet
+
+gopro_test_input: third_party/NAFNet/datasets/GoPro/test/input.lmdb
+gopro_test_gt: third_party/NAFNet/datasets/GoPro/test/target.lmdb
+checkpoint: third_party/NAFNet/experiments/pretrained_models/NAFNet-GoPro-width64.pth
+nafnet_test_config: third_party/NAFNet/options/test/GoPro/NAFNet-width64.yml
+
+baseline_pred_dir: third_party/NAFNet/results/NAFNet-GoPro-width64-test/visualization/gopro-test
+tta_pred_dir: results/tta/images
+
+csv_dir: results/csv
+figures_dir: results/figures
+failure_cases_dir: results/failure_cases
+

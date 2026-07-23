@@ -1,0 +1,27 @@
+quantile: 0.25
+max_cases_per_group: 8
+image_extensions:
+  - .png
+  - .jpg
+  - .jpeg
+  - .bmp
+  - .tif
+  - .tiff
+
+groups:
+  heavy_blur:
+    feature: blur_score
+    direction: low
+  light_blur:
+    feature: blur_score
+    direction: high
+  high_saturation_or_dark:
+    feature: saturation_ratio,dark_ratio
+    direction: high_or
+  high_texture:
+    feature: edge_density
+    direction: high
+  low_texture:
+    feature: edge_density
+    direction: low
+
