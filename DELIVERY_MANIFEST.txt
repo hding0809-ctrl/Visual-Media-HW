@@ -1,0 +1,59 @@
+NAFNet GoPro Deblurring Reproduction Package
+Generated date: 2026-06-11
+
+Package name:
+  nafnet-gopro-complete-deliverable-20260611.tar.gz
+
+Purpose:
+  This package contains a complete rerunnable NAFNet GoPro deblurring reproduction project, including source code, scripts, test data, pretrained checkpoint, experiment outputs, visualizations, logs, and bilingual final reports.
+
+Main entry point:
+  README.md
+
+Recommended environment:
+  Python 3.9
+  PyTorch 1.11.0
+  CUDA 11.3
+
+Included reports:
+  report/nafnet_gopro_report_zh.pdf
+  report/nafnet_gopro_report_zh.docx
+  report/nafnet_gopro_report_zh.md
+  report/nafnet_gopro_report_en.pdf
+  report/nafnet_gopro_report_en.docx
+  report/nafnet_gopro_report_en.md
+
+Included experiment assets:
+  results/csv/
+  results/figures/
+  results/failure_cases/
+  report/figures/
+  logs/baseline_eval.log
+  logs/tta_eval.log
+  logs/experiment_log.md
+  logs/ai_usage_log.md
+
+Included rerun assets:
+  third_party/NAFNet/
+  third_party/NAFNet/datasets/GoPro/test/input.lmdb
+  third_party/NAFNet/datasets/GoPro/test/target.lmdb
+  third_party/NAFNet/experiments/pretrained_models/NAFNet-GoPro-width64.pth
+  downloads/GOPRO_Large.zip
+
+Primary rerun commands:
+  bash scripts/prepare_dirs.sh
+  CUDA_VISIBLE_DEVICES=0 bash scripts/run_baseline.sh
+  CUDA_VISIBLE_DEVICES=0 bash scripts/run_failure_analysis.sh
+  CUDA_VISIBLE_DEVICES=0 bash scripts/run_tta_eval.sh
+  bash scripts/make_figures.sh
+  bash scripts/collect_report_assets.sh
+
+Reference baseline:
+  PSNR: 33.7103
+  SSIM: 0.9668
+
+Checksum:
+  Verify the archive with the accompanying .sha256 file before extraction.
+
+Notes:
+  The package is prepared for customer delivery. Server addresses, internal absolute paths, usernames, and unrelated environment names have been removed from customer-visible text files.
