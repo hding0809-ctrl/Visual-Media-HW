@@ -1,0 +1,9 @@
+opencv-python
+pandas
+numpy
+matplotlib
+scikit-image
+tqdm
+pyyaml
+lmdb
+

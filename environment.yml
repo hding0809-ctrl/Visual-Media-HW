@@ -1,0 +1,23 @@
+name: nafnet-vm
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pytorch=1.11.0
+  - torchvision=0.12.0
+  - torchaudio=0.11.0
+  - cudatoolkit=11.3
+  - numpy
+  - pyyaml
+  - tqdm
+  - pandas
+  - matplotlib
+  - scikit-image
+  - lmdb
+  - pip:
+      - opencv-python
+
